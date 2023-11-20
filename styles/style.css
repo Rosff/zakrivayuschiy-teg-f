@@ -12,14 +12,17 @@
 
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 
+Любовь, привет, спасибо за ваши наставления на путь истинный, оч помогло,т.к. не имел возможности сверить со светлой темой, не копировалась страница в пп, с ноута такая же фигня, ошибка
+появлялась.
+А после прошлой работы, я пытаюсь проверять на нескольких экранах, т.к. у меня был казус проблемой,которой не было, меня мой же моник обманул,тут ситуция возможно схожа, в качестве примера
+у меня на размерах 375*667 на ноуте надпись "закрываюищй тег" больше чем надо по пп, а с пк всё идеально, как я устал от такого.
+Те замечания что вы мне отметили поправил,жду обратной связи, хорошего дня! ☻
+
 */
-
-
-
 .page {
   min-inline-size: 320px;
   font-variation-settings: 'wght' 400;
-  font-family: var(--main-font), sans-serif;
+  font-family: var(--main-font), fantasy;
   background-image: repeating-linear-gradient(
       to bottom,
       var(--bg-color) 0px 2px,
@@ -54,7 +57,7 @@
   padding: clamp(7.5rem, 7.1479rem + 1.5023vw, 8.5rem) 0 12px;
   color: var(--accent-color);
   text-transform: uppercase;
-  font-family: var(--accent-font), sans-serif;
+  font-family: var(--accent-font), fantasy;
   font-weight: 400;
   border: 2px solid var(--border-color);
   background-color: var(--bg-color);
@@ -66,13 +69,13 @@
 }
 
 .header__title {
-  font-family: 'PressStart2P-Regular', sans-serif;
+  font-family: var(--accent-font), fantasy;
   font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
   text-decoration: none;
 }
 
 .header__description {
-  font-family: 'PressStart2P-Regular', sans-serif;
+  font-family: var(--accent-font), fantasy;
   font-size: 23px;
 }
 
@@ -85,10 +88,10 @@
 }
 
 .card__title {
-  font-family: var(--text-font), sans-serif;
+  font-family: var(--text-font), fantasy;
   border: 2px solid var(--border-color);
   font-size: 18px;
-  font-weight: 785;
+  font-variation-settings: "wght" var(--font-weight-title);
   line-height: normal;
   font-style: normal;
   padding: 5px 22px 5px 8px;
@@ -137,9 +140,17 @@
 }
 
 
+@supports (-webkit-text-stroke: 1px #fff) or (text-stroke: 1px #fff) {
+  .card__image-label {
+    text-stroke: 1px var(--color2);
+    -webkit-text-stroke: 1px var(--color2);
+    text-shadow: none;
+  }
+}
+
 .card__image-label {
   position: absolute;
-  font-family: var(--accent-font), sans-serif;
+  font-family: var(--accent-font), fantasy;
   font-size: 14px;
   font-weight: 400;
   top: 25px;
@@ -148,6 +159,9 @@
   color: var(--accent-color);
   opacity: 0.5;
   mix-blend-mode: hard-light;
+  -webkit-text-stroke: 1px var(--stroke-color);
+  text-shadow: 0 var(--color2), 0 1px var(--color2),
+  0 -1px var(--color2), 1px 0 var(---color2);
 }
 
 .card__content {
@@ -172,11 +186,11 @@
 }
 
 .card__content-text {
-  font-family: var(--text-font), sans-serif;
+  font-family: var(--text-font), fantasy;
   color: var(--accent-color);
   font-size: 18px;
   line-height: 21px;
-  font-weight: 465;
+  font-variation-settings: "wght" var(--font-weight-card);
 }
 
 .card__content-text:nth-child(1) {
@@ -230,7 +244,7 @@
 /*кнопки*/
 .button__text {
   font-size: 14px;
-  font-family: var(--accent-font), sans-serif;
+  font-family: var(--accent-font), fantasy;
   color: var(--mix-blend-color);
   font-weight: 400;
   font-style: normal;
@@ -248,7 +262,7 @@
 
 .button__text-rembemer {
   font-size: 14px;
-  font-family: var(--accent-font), sans-serif;
+  font-family: var(--accent-font), fantasy;
   color: var(--mix-blend-color);
   mix-blend-mode: difference;
   font-weight: 400;
@@ -306,7 +320,7 @@
 }
 
 .theme-menu__button {
-  font-family: var(--accent-font), sans-serif;
+  font-family: var(--accent-font), fantasy;
   border: none;
   line-height: normal;
   font-style: normal;
@@ -327,7 +341,7 @@
 /*кнопки*/
 /*диалоговое окно*/
 .dialog::backdrop {
-  background-color: rgba(0 0 0 / 0.8);
+  background-color: rgba(0 0 0 / 0.75);
 }
 
 .dialog {
@@ -345,7 +359,7 @@
   padding: 30px;
   background-color: var(--bg-color);
   color: var(--accent-color);
-  font-family: var(--accent-font), sans-serif;
+  font-family: var(--accent-font), fantasy;
 }
 
 .dialog:not([open]) {
@@ -366,7 +380,7 @@
   align-items: center;
   justify-content: center;
   gap: 8px;
-  width: 100%;
+  min-width: 293px;
   padding: 15px 20px;
   border: 2px solid var(--border-color);
   background-color: var(--bg-color);
@@ -376,7 +390,7 @@
 }
 
 .button-text {
-  font-family: var(--accent-font), sans-serif;
+  font-family: var(--accent-font), fantasy;
   mix-blend-mode: difference;
   font-size: 14px;
   font-weight: 400;
@@ -412,7 +426,7 @@
   width: 100%;
 }
 .dialog-text {
-  font-family: var(--accent-font), sans-serif;
+  font-family: var(--accent-font), fantasy;
   line-height: 1.5;
   white-space: normal;
   max-inline-size: 234px;
@@ -434,6 +448,9 @@
   }
   .header__description{
     font-size:14px;
+  }
+  .button_save{
+    min-width: 257px;
   }
 }
 

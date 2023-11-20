@@ -10,9 +10,10 @@
     --accent-color: #00cc14;
     --mix-blend-color: #00cc14;
     --color2: #000;
-    --text-weight: 465;
     --linear-gradient-first: #007f0c;
     --linear-gradient-second: #004306;
+    --font-weight-card: 465;
+    --font-weight-title: 785;
   }
   
   @media (prefers-color-scheme: dark) {
@@ -22,9 +23,10 @@
       --border-color: #00cc14;
       --accent-color: #00cc14;
       --color2: #000;
-      --text-weight: 465;
       --linear-gradient-first: #007f0c;
       --linear-gradient-second: #004306;
+      --font-weight-card: 465;
+      --font-weight-title: 785;
     }
   }
   
@@ -36,6 +38,8 @@
     --color2: #fff;
     --linear-gradient-first: #e7e7e7;
     --linear-gradient-second: #1a1a1a;
+    --font-weight-title:700;
+    --font-weight-card: 400;
   }
   
   @media (prefers-color-scheme: light) {
@@ -45,8 +49,8 @@
       --linear-gradient-first: #e7e7e7;
       --mix-blend-color: #fff;
       --color2: #fff;
-      --header-weight: 700;
-      --text-weight: 400;
+      --font-weight-title:700;
+      --font-weight-card: 400;
       --linear-gradient-second: #1a1a1a;
       --accent-color: #000;
     }
