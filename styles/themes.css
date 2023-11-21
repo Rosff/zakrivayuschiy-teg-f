@@ -32,7 +32,7 @@
   
   :root.theme-light {
     --border-color: #000;
-    --bg-color: #d3d3d3;
+    --bg-color: #fff;
     --accent-color: #000;
     --mix-blend-color: #fff;
     --color2: #fff;
@@ -45,7 +45,7 @@
   @media (prefers-color-scheme: light) {
     :root {
       --border-color: #000;
-      --bg-color: #d3d3d3;
+      --bg-color: #fff;
       --linear-gradient-first: #e7e7e7;
       --mix-blend-color: #fff;
       --color2: #fff;
